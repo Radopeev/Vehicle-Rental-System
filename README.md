@@ -1,7 +1,7 @@
 #Vehicle-Rental-System
 
 
-Enums and Abstract Class
+Enums and Abstract Class  
 VehicleType enum defines types of vehicles.
 Vehicle abstract class includes common attributes and a constructor.
 
