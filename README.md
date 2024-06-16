@@ -1,6 +1,16 @@
-Steps for making this project
-1) I created enum class for the differente types of vehicles
-2) Continued with a abstact class Vehicle which collects all common vehicle parts
-3) Made three diffrent successor class : Motorcycle,CargoVan and Car which all add new data members
-4) Made the class RentCalculator has one public method that takes vehicle, start date, end date and return date and calculates the rental cost given the conditions in the task.
-   This class has many private methods to separate the different logic to provide better abstraction.
+#Vehicle-Rental-System
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Enums and Abstract Class:
+VehicleType enum defines types of vehicles.
+Vehicle abstract class includes common attributes and a constructor.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Concrete Vehicle Classes:
+Motorcycle, CargoVan, and Car classes extend Vehicle, adding specific attributes and validation in their constructors.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RentCalculator Class:
+Constants: Define various cost rates and thresholds.
+Rental Cost Calculation: getRentalCostForVehicle determines the daily rental rate based on the vehicle type and rental duration. calculateRentalCost computes the total rental cost considering the rental period and any late returns.
+Insurance Cost Calculation: getInsuranceCost provides the insurance rate based on vehicle type. calculateInsuranceCost adjusts the insurance cost based on specific vehicle attributes and late returns.
+Total Cost Calculation: calculateRent combines the rental and insurance costs to provide the total cost for the rental period.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
